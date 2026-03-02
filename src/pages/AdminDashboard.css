@@ -1,0 +1,138 @@
+.admin-page {
+    padding-bottom: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.admin-header {
+    margin-bottom: 2.5rem;
+}
+
+.admin-header h1 {
+    font-size: 2.25rem;
+    color: var(--text-dark);
+}
+
+.admin-header p {
+    color: var(--text-gray);
+    margin-top: 0.25rem;
+}
+
+.admin-stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.admin-stat-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.icon-wrapper {
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-stat-card h3 {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    font-weight: 500;
+}
+
+.admin-stat-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1.2;
+}
+
+/* Table */
+.admin-table-container {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.admin-table-container h2 {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    font-size: 1.25rem;
+    color: var(--text-dark);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.admin-table th {
+    background: var(--bg-main);
+    color: var(--text-gray);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.admin-table tr:last-child td {
+    border-bottom: none;
+}
+
+.plan-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.plan-badge.pro {
+    background: var(--warning-bg);
+    color: #b45309;
+}
+
+.plan-badge.free {
+    background: var(--primary-light);
+    color: var(--primary);
+}
+
+.role-select {
+    padding: 0.35rem 0.5rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    background: white;
+    font-family: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.role-select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+@media (max-width: 1024px) {
+    .admin-table-container {
+        overflow-x: auto;
+    }
+}
